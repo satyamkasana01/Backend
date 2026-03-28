@@ -28,3 +28,6 @@ by the 'gitignore generator' site we got by default setup for ignore
 3. in "script": {
     change "test" to "dev": "nodemon src/index.js"
 }
+
+# install $ npm i -D prettier
+create file .prettierrc  and another file .prettierignore
