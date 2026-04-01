@@ -2,6 +2,8 @@
 import dotenv from "dotenv";  // -r dotenv/config --experimental-json-modules in package.json
 import connectDB from "./db/index.js";
 import dns from "./db/dns.cjs";
+import { app } from "./app.js";
+
 dns
 
 
