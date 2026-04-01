@@ -31,3 +31,21 @@ by the 'gitignore generator' site we got by default setup for ignore
 
 # install $ npm i -D prettier
 create file .prettierrc  and another file .prettierignore
+
+-- now i made my MongoDB atles account and create my server 
+
+
+-now install npm package of (npm i mongoose express dotenv)
+
+# How to connect database
+--1. all the database connection is written in one file (index.js) through ()() iffe or made function and call it
+
+-- another apporch and clean 
+in db folder made index.js
+
+-- import express in app.js
+
+when we used async there is required of promises 
+--so we used .then.catch in index.js
+
+now install 2 package - npm cookie-parser cors and import them in app.js
