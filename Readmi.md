@@ -43,9 +43,17 @@ create file .prettierrc  and another file .prettierignore
 -- another apporch and clean 
 in db folder made index.js
 
--- import express in app.js
+-- import express in # app.js
 
 when we used async there is required of promises 
 --so we used .then.catch in index.js
 
 now install 2 package - npm cookie-parser cors and import them in app.js
+
+#utils (video 9 need rewatch)
+
+
+# Modles 
+write normal modeling in files
+after this install mongoose-aggregate-paginate-v2, bcrypt and jsonwebtoken and import wisely 
+now the problem is we increapt this so we get help form middlewre(pre hock)
