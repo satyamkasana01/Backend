@@ -57,3 +57,10 @@ now install 2 package - npm cookie-parser cors and import them in app.js
 write normal modeling in files
 after this install mongoose-aggregate-paginate-v2, bcrypt and jsonwebtoken and import wisely 
 now the problem is we increapt this so we get help form middlewre(pre hock)
+create custom tokken
+
+# file uplode
+- create acount on cloudinary and install it
+- also multer npm package
+- create cloudinary.js 
+-- creat middlewar using multer multer.middlieware.js
