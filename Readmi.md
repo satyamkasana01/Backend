@@ -64,3 +64,14 @@ create custom tokken
 - also multer npm package
 - create cloudinary.js 
 -- creat middlewar using multer multer.middlieware.js
+
+
+
+
+
+
+# main start here
+
+# controller
+create user file and send  res "ok" 
+create route and import it in app.js
