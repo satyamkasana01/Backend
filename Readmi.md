@@ -75,3 +75,13 @@ create custom tokken
 # controller
 create user file and send  res "ok" 
 create route and import it in app.js
+
+
+#logic build in controller.js
+-import multer in router and applied before registeration
+-- import api error in controller // validations
+-- import User in contriller  // for  check if user already exists: username, email
+    
+--  chavatarLocalPath -check for images, check for avatar
+-upload them to cloudinary also import uploadOnCloudinary
+
