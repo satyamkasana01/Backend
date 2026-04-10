@@ -55,11 +55,12 @@ const userSchema = new Schema(
 // - New user created -> password is plain text -> hash it -> save hashed password 
 // - User updates only name/email -> password unchanged -> do not hash again
 // - User changes password -> hash new password -> save it
+// -- when you use async function, you usually do not use next.Because async already tells Mongoose to wait until the function finishes.
 userSchema.pre("save", async function (next) {
-    if(!this.isModified("password")) return next();
+    if(!this.isModified("password")) return ;
 
     this.password = await bcrypt.hash(this.password, 10)
-    next()
+    
 })  
 
 //custom method
