@@ -85,3 +85,39 @@ create route and import it in app.js
 --  chavatarLocalPath -check for images, check for avatar
 -upload them to cloudinary also import uploadOnCloudinary
 
+
+
+
+
+
+
+# Postman
+go in body select form-data and send key and values
+solved every error
+now file upload on cloudinary
+-- remove console.log from cloudinary.js
+--unlinked file  fs.unlinkSync(localFilePath)
+
+--console.log(req.files) // to check the files coming from frontend when we send the data from postmon and show in terminal
+
+
+# Access Refresh Token, Middleware and cookies in Backend
+
+-- gonna made login user in controll.js
+// req body -> data
+   // username or email
+   //find the user
+   // password check
+   // access and refresh token
+   // send this tookens in cookie
+
+
+   -- create seprated meathod for generateAccessAndRefereshToken in user.controller for easy and we can call it together
+
+
+   -- gonna made middleware by own for logout mean authintication for user hai ya nhi hai
+
+
+-- inject this in routes and make it like loginUser and logoutUser
+
+-- req.user in user.controller in logoutUser
