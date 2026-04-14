@@ -121,3 +121,8 @@ now file upload on cloudinary
 -- inject this in routes and make it like loginUser and logoutUser
 
 -- req.user in user.controller in logoutUser
+
+-- see login and logout in poostman
+
+made end point where user can refresh there token in controller
+-- import in routes
