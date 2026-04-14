@@ -14,7 +14,7 @@ const generateAccessAndRefereshToken = async(userId) =>
       const refreshToken = await user.generateRefreshToken()
 
       user.refreshToken = refreshToken
-      await user.save({validateBeforeSave: false}) 
+      await user.save({validateBeforeSave: false})   //  newly created refresh token and store it in that user's database record.
 
       return {accessToken, refreshToken}
 
@@ -195,7 +195,7 @@ const logoutUser = asyncHandler(async(req, res) => {
 const refreshAccessToken = asyncHandler(async (req, res) =>{
    const incomingRefreshToken = req.cookies.refreshToken || req.body.refreshToken
 
-   if (incomingRefreshToken) {
+   if (!incomingRefreshToken) {
       throw new ApiError(401, "unauthorize request")
    }
 
@@ -220,7 +220,7 @@ const refreshAccessToken = asyncHandler(async (req, res) =>{
          secure: true
       }
    
-      const {accessToken, newRefreshToken} = await generateAccessAndRefereshToken(user.id)
+      const {accessToken, newRefreshToken} = await generateAccessAndRefereshToken(user._id)
    
       return res.status(200)
       .cookie("accessToken", accessToken, options )

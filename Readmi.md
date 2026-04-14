@@ -126,3 +126,5 @@ now file upload on cloudinary
 
 made end point where user can refresh there token in controller
 -- import in routes
+
+# made models of subscription
