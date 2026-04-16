@@ -129,4 +129,9 @@ made end point where user can refresh there token in controller
 
 # made models of subscription
 -- in DB
---changeCurrentPassword in controller
+
+-- Writing update controllers for user
+like changeCurrentPassword in controller
+
+# Mongodb aggregation pipelines 
+-- getUserChannelProfile in controller
